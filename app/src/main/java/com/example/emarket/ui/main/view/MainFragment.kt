@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -131,6 +132,7 @@ class MainFragment : Fragment(), EMarketListener, FilterFragment.FilterListener 
         } else {
             cartVM.addProduct(product)
         }
+        Toast.makeText(context, getString(R.string.add_to_your_cart), Toast.LENGTH_SHORT).show()
     }
 
 
@@ -178,10 +180,10 @@ class MainFragment : Fragment(), EMarketListener, FilterFragment.FilterListener 
                     (currentFilterBrands.isEmpty() || currentFilterBrands.contains(product.brand)) &&
                             (currentFilterModels.isEmpty() || currentFilterModels.contains(product.model))
                 }.sortedWith(when (currentFilterCriteria) {
-                    "New_to_old" -> compareByDescending { it.createdAt }
-                    "Old_to_new" -> compareBy { it.createdAt }
-                    "Price_hight_to_low" -> compareByDescending { it.price }
-                    "Price_low_to_hight" -> compareBy { it.price }
+                    FilterCriteria.NEW_TO_OLD.criteria -> compareByDescending { it.createdAt }
+                    FilterCriteria.OLD_TO_NEW.criteria -> compareBy { it.createdAt }
+                    FilterCriteria.PRICE_HIGH_TO_LOW.criteria -> compareByDescending { it.price }
+                    FilterCriteria.PRICE_LOW_TO_HIGH.criteria -> compareBy { it.price }
                     else -> compareBy { it.name }
                 })
             }

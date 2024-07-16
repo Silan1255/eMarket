@@ -19,6 +19,7 @@
     <string name="title_e_market">E-MARKET</string>
     <string name="txt_filter">Filter:</string>
     <string name="total_price_format">$%.2f</string>
+    <string name="add_to_your_cart">added to your cart</string>
 
     <!-- Button -->
     <string name="btn_select_filter">Select Filter</string>
