@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">EMarket</string>
+
+    <!-- Hint -->
+    <string name="hint_search">Search</string>
+
+
+    <!-- Text -->
+    <string name="empty">-</string>
+    <string name="plus_text">+</string>
+    <string name="minus_text">-</string>
+    <string name="total_text">Total:</string>
+    <string name="complete_text">Complete</string>
+    <string name="filter_text">Filter</string>
+    <string name="sort_by_text">Sort by</string>
+    <string name="brand_text">Brand</string>
+    <string name="model_text">Model</string>
+    <string name="txt_price">Price</string>
+    <string name="title_e_market">E-MARKET</string>
+    <string name="txt_filter">Filter:</string>
+    <string name="total_price_format">$%.2f</string>
+
+    <!-- Button -->
+    <string name="btn_select_filter">Select Filter</string>
+    <string name="btn_primary">Primary</string>
+    <string name="rb_old_to_new">Old to new</string>
+    <string name="rb_new_to_old">New to old</string>
+    <string name="rb_price_hight_to_low">Price hight to low</string>
+    <string name="rb_price_low_to_hight">Price low to hight</string>
+    <string name="btn_add_cart">Add to Cart</string>
+
+    <!-- No data -->
+    <string name="no_products_yet">No products yet</string>
+    <string name="no_products_your_cart_yet">No products in your cart yet</string>
+    <string name="no_products_your_favorite_yet">No products in your favorite yet</string>
+
+</resources>
